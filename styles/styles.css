@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+
+
+:root{
+    --btn-color: #9efc3e;
+    --primary-color: #dcdcdc;
+    --bar-color: #343436;
+    --name-color: #e3e3e4;
+    --text-color: #525252;
+    --links-color: rgba(255, 255, 255, 0.8);
+    --heading-font: "EB Garamond", sans-serif;
+    --body-font: "Roboto", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: var(--body-font);
+    position: relative;
+}
+
+img{
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.sidebar{
+    background-color: var(--bar-color);
+    min-height: 100vh;
+    position: fixed;
+    left: 0;
+    width: 20%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+}
+
+.profile__picture{
+    display: flex;
+    justify-content: center;
+}
+
+.mainbody{
+    position: absolute;
+    left: 20%;
+    padding-left: .25rem;
+    min-height: 100vh;
+    /* background-color: var(--primary-color); */
+    background: linear-gradient(0deg, var(--primary-color) 0%, rgba(255, 255, 255, 0.897) 50%, var(--name-color) 100%);
+    width: 80%;
+}
