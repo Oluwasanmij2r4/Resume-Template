@@ -1,67 +1,149 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css" />
     <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
-</head>
-<body>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <main class="container">
-        <section class="sidebar">
-            <aside>
-                <div class="profile__picture"><img src="https://images.unsplash.com/photo-1666866868698-67ee989fba70?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29ycG9yYXRlJTIwc21pbGluZyUyMG1hbnxlbnwwfHwwfHx8MA%3D%3D" alt="my image"></div>
+      <section class="sidebar">
+        <aside>
+          <div class="profile_picture">
+            <img
+              src="https://images.unsplash.com/photo-1596200602473-ad8bf189f880?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fGNvcnBvcmF0ZSUyMHNtaWxpbmclMjBtYW58ZW58MHwwfDB8fHww"
+              alt="my image"
+            />
+          </div>
 
-                <div>
-                    <div>
-                        <h3>Contact</h3>
-                        <div>
-                            <p>Phone</p>
-                            <p>08000000000</p>
-                        </div>
-                        <div>
-                            <p>Email</p>
-                            <p>AbcdX@gmail.com</p>
-                        </div>
-                        <div>
-                            <p>Website</p>
-                            <a>abcd.com</a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h3>Education</h3>
-                        <h4>B.eng Computer Engineering</h4>
-                        <p>University of Ilorin</p>
-                        <p>2018-2024</p>
-                    </div>
-
-                    <div>
-                        <h3>skills</h3>
-
-                        <ul>
-                            <li>UI/UX designer</li>
-                            <li>React Expert</li>
-                            <li>Htmle and Css</li>
-                            <li>Tailwind</li>
-                            <li>Vue</li>
-                        </ul>
-                    </div>
+          <div class="sidebar__details">
+            <div class="contact_wrapper">
+              <h3>Contact</h3>
+              <div class="contact">
+                <div class="contact_card">
+                  <h5>Phone</h5>
+                  <p>08000000000</p>
                 </div>
-            </aside>
-        </section>
+                <div class="contact_card">
+                  <h5>Email</h5>
+                  <p>AbcdX@gmail.com</p>
+                </div>
+                <div class="contact_card">
+                  <h5>Website</h5>
+                  <a href="#">Abcd.com</a>
+                </div>
+              </div>
+            </div>
 
+            <div class="education">
+              <h3>Education</h3>
+              <h5>B.eng Computer Engineering</h5>
+              <div class="education_card">
+                <p>University of Ilorin</p>
+                <p>2018-2024</p>
+              </div>
+            </div>
 
-        <section class="mainbody">
-            <nav>
-                <h1>Ade Joseph</h1>
-            </nav>
-        </section>
+            <div class="skill">
+              <h3>Skills</h3>
 
+              <ul class="list_parent">
+                <li class="list">
+                  <h5>UI/UX design </h5>
+                  <label for="file">Expertise:</label>
+                  <progress id="file" value="75" max="100">75%</progress>
+                </li>
+
+                <li class="list">
+                  <h5>REACT </h5>
+                  <label for="file">Expertise:</label>
+                  <progress id="file" value="85" max="100">85%</progress>
+                </li>
+
+                <li class="list">
+                  <h5>HTML & CSS </h5>
+                  <label for="file">Expertise:</label>
+                  <progress id="file" value="99" max="100">99%</progress>
+                </li>
+
+                <li class="list">
+                  <h5>Tailwind</h5>
+                  <label for="file">Expertise:</label>
+                  <progress id="file" value="90" max="100">90%</progress>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="main_body">
+        <nav>
+          <h1>Ade  Joseph</h1>
+          <p>Software Developer</p>
+        
+        </nav>
+
+        <article class="about_me">
+          <h2 class="heading"><i class="fa-solid fa-user"></i><span>About Me</span></h2>
+          <p class="description">I'm a passionate full-stack developer with a strong focus on building scalable web applications and user-friendly interfaces. With a background in computer science and a love for clean, maintainable code, I thrive on transforming complex problems into intuitive digital solutions. I'm currently exploring blockchain integration in consumer platforms and enjoy collaborating with creative minds to bring innovative ideas to life.</p>
+        </article>
+
+        <article class="experience">
+          <h2 class="heading"><i class="fa-solid fa-briefcase"></i><span>Experience</span></h2>
+          <div class="experience_card">
+            <div class="sub_heading">
+              <h3>Software Engineer – NovaLabs Technologies</h3>
+              <p class="year">Jan 2023 – Present</p>
+            </div>
+            <ul>
+              <li>Spearheaded the migration of a legacy e-commerce platform to a modern React + Node.js stack, improving performance by 40%.</li>
+              <li>Integrated third-party APIs for payment and logistics, including Stripe and Shippo.</li>
+              <li>Introduced CI/CD pipelines using GitHub Actions, reducing deployment time by 60%.</li>
+            </ul>
+          </div>
+
+           <div class="experience_card">
+            <div class="sub_heading">
+              <h3>Frontend Developer – PixelForge Studio</h3>
+              <p class="year">Jul 2021 – Dec 2022</p>
+            </div>
+            <ul>
+              <li>Led the UI development of a cross-platform music streaming app with over 100k monthly users.</li>
+              <li>Collaborated with designers to implement animations using Framer Motion and improved accessibility (WCAG 2.1 compliant).</li>
+              <li>Optimized React rendering using memoization and lazy loading, reducing bundle size by 25%.</li>
+            </ul>
+          </div>
+
+          <div class="experience_card">
+            <div class="sub_heading">
+              <h3 >Intern – ByteNest Innovations</h3>
+              <p class="year">Jan 2021 – Jun 2021</p>
+            </div>
+            <ul>
+              <li>Built reusable UI components for internal dashboards using React and Tailwind CSS.</li>
+              <li>Worked alongside senior developers to debug and resolve performance bottlenecks.</li>
+              <li>Gained hands-on experience with Git workflows and Agile methodology.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="experience_card">
+          <h2 class="heading"><i class="fa-solid fa-book-open-reader"></i><span>Interests</span></h2>
+          <ul>
+            <li>Blockchain for creators</li>
+            <li>Data Visualization</li>
+            <li>Music production tech</li>
+            <li>Wildlife and biodiversity tech</li>
+            <li>Mentoring new developers</li>
+          </ul>
+        </article>
+      </section>
     </main>
-</body>
+  </body>
 </html>
