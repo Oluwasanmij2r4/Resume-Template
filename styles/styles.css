@@ -21,12 +21,14 @@
 
 body {
   font-family: var(--body-font);
+  height: 100vh;
 }
 
-.container {
+.wrapper {
   display: grid;
   grid-template-columns: 30% 70%;
   min-height: 100vh;
+  width: 100%;
 }
 
 img {
@@ -44,29 +46,30 @@ img {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding: 2rem 1.5rem 1rem;
+  padding: 1rem 1.5rem 0 1.5rem;
   color: var(--primary-color);
+  min-height: 100vh;
 }
 
 .profile_picture {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .contact_wrapper,
 .education, .skill {
-  margin: 2.5rem 0;
+  margin: 1rem 0;
 }
 
 .sidebar h3 {
   color: var(--name-color);
-  padding-bottom: 8px;
+  padding-bottom: 4px;
 }
 
 .sidebar h5 {
   font-weight: 600;
-  padding-bottom: 5px;
+  padding-bottom: 0;
 }
 
 .sidebar p,
@@ -113,7 +116,7 @@ flex-wrap: wrap;
 }
 
 .list{
-  padding-bottom: .75rem;
+  padding-bottom: .25rem;
 }
 
 .list label{
